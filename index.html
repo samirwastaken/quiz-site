@@ -5,30 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Samir's Quiz Game</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-</head>
 <body>
     <div class="container">
         <!--The start screen; this is the initial page-->
-        <div class="current-screen" id = "start-screen">
+        <div class="screen active" id = "start-screen">
             <h1>It's Quiz Time!</h1>
             <p>Test your knowledge with these questions.</p>
             <button id = start-button>start!</button>
-
         </div>
-
+        <!--This is the quiz screen, this is what the user will interact with-->
         <div class = "screen" id="quiz-screen">
             <div class = "quiz-header">
                 <!-- The Question will be updated-->
                 <h2 id = "textForQuestion">Question goes here</h2>
+                <!--Information about the Quiz (such as how many questions are left)-->
                 <div class = "quiz-info">
                     <p>Question <span id = "currentQuestionNumber">1</span> of <span id = "totalQuestions">5</span></p>
                     <p>Score: <span id = "score">0</span></p>
-
                 </div>
             </div>
+            <!--The answer choices-->
             <div class = "quiz-bank" id="quiz-answers">
                 <!--Quiz Answer Buttons gonna be here-->
             </div>
@@ -39,8 +35,8 @@
                 </div>
             </div>
         </div>
-
-        <div class = "results-screen" id = "results-screen">
+        <!--Ending Screen for when the quiz is over-->
+        <div class = "screen" id = "results-screen">
             <h1 class = results-header>Quiz Results</h1>
 
             <div class = "results-info" id = "results-info">
@@ -51,8 +47,7 @@
             </div>
             <button id = "restart">Restart!</button>
         </div>
-
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@ body {
 
 .container 
 {
-    background-color: #a2a8c5;
+    background-color: #8d9877;
     border-radius: 2rem;
     box-shadow: 0 5px 20px 5px rgb(0,0,0,.4);
     /* setting max-width*/
@@ -30,6 +30,52 @@ body {
 }
 
 /* Screens */
+.screen 
+{
+    display: none;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+
+.screen.active
+{
+    display: block;
+}
+
+
+/* Start Screen*/
+
+#start-screen h1
+{
+    background-color: #b5b8c7;
+    padding: .5rem;
+    border-radius: 2rem;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+#start-screen p
+{
+    font-size:.85rem;
+    background-color: #b5b8c7;
+    border-radius: 1rem;
+    width: 85%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    padding: .4rem; 
+
+}
+
+#start-screen button
+{
+    background-color: #9790ab;
+    border-radius: 2rem;
+    
+}
 
 
 
