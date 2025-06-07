@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Samir's Quiz Game</title>
+</head>
+<body>
+    <div class="container">
+        <!--The start screen; this is the initial page-->
+        <div class="current-screen" id = "start-screen">
+            <h1>It's Quiz Time!</h1>
+            <p>Test your knowledge with these questions.</p>
+            <button id = start-button>start!</button>
+
+        </div>
+
+        <div class = "screen" id="quiz-screen">
+            <div class = "quiz-header">
+                <!-- The Question will be updated-->
+                <h2 id = "textForQuestion">Question goes here</h2>
+                <div class = "quiz-info">
+                    <p>Question <span id = "currentQuestionNumber">1</span> of <span id = "totalQuestions">5</span></p>
+                    <p>Score: <span id = "score">0</span></p>
+
+                </div>
+            </div>
+            <div class = "quiz-bank" id="quiz-answers">
+                <!--Quiz Answer Buttons gonna be here-->
+            </div>
+            <div class = "progress-bar" id = "progress-bar">
+
+            </div>
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
