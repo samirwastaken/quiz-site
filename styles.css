@@ -9,7 +9,7 @@
 body {
     display: flex;
     justify-content: center;
-    background: #fbf9fa;
+    background: #fbdaba;
     align-items: center;
     min-height: 100vh;
     padding: 1rem;
@@ -72,10 +72,56 @@ body {
 
 #start-screen button
 {
-    background-color: #9790ab;
+    background-color: #b5b8c7;
     border-radius: 2rem;
+    border: solid;
+    padding: 10px 25px;
+    border-color: #9790ab;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: monospace;
     
 }
 
+#start-screen button:hover
+{
+    background-color: #585a68 !important; 
+}
 
+/* Quiz Screen */
 
+.quiz-header
+{
+
+}
+
+#textForQuestion
+{
+
+}
+
+.quiz-info
+{
+    display: flex; 
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+}
+
+.quiz-bank
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.quiz-btn
+{
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid black; 
+    border-radius: 2rem;
+    text-align: left;
+
+}
