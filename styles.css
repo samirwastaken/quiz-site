@@ -6,6 +6,8 @@
     margin: 0;
 }
 
+
+
 body {
     display: flex;
     justify-content: center;
@@ -70,7 +72,7 @@ body {
 
 }
 
-#start-screen button
+#start-button
 {
     background-color: #b5b8c7;
     border-radius: 2rem;
@@ -79,12 +81,12 @@ body {
     border-color: #9790ab;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     font-family: monospace;
-    
 }
 
-#start-screen button:hover
+#start-button:hover
 {
-    background-color: #585a68 !important; 
+    background-color: #8e97c8;
+    border-color: #7a748a;
 }
 
 /* Quiz Screen */
@@ -116,6 +118,7 @@ body {
     margin-bottom: 25px;
 }
 
+/* Quiz Button & States */
 .quiz-btn
 {
     background-color: whitesmoke;
@@ -125,3 +128,16 @@ body {
     text-align: left;
 
 }
+
+/* Correct and Incorrect Buttons */
+.quiz-btn.correct
+{
+    background-color: rgb(194, 246, 194);
+}
+
+.quiz-btn.incorrect
+{
+    background-color: rgb(255, 179, 179);
+}
+
+
