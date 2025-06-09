@@ -65,6 +65,38 @@ const questions = [
     }
 ]
 
+// Quiz State Variables
+let currentQuestionIndex = 0;
+let score = 0;
+let answersAreDisabled = false;
+
+currentQuestionNumber.textContent = questions.length;
+totalQuestions.textContent = questions.length;
+
+
+/* Event Listeners for Actions */
+startButton.addEventListener("click", startQuiz); // This runs the "startQuiz" method
+restartButton.addEventListener("click", restartQuiz);
+
+
+
+/* Functions */
+function startQuiz()
+{
+    console.log("Quiz Started!");
+    score = 0;
+    quizScore.textContent = score;
+};
+
+
+function restartQuiz()
+{
+    console.log("The Quiz has been restarted!");
+
+};
+
+
+
 
 
 
