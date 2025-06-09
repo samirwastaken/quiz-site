@@ -140,4 +140,61 @@ body {
     background-color: rgb(255, 179, 179);
 }
 
+/* Progress Bar and its progress */
+.progress-bar
+{
+    height: 10px;
+    background-color: peachpuff;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.progress
+{
+    height: 100%;
+    background-color: rgb(255, 83, 53);
+    /* Because the bar should be empty at the start, the width should start at 0% */
+    width: 0%;
+    transition: width 0.5s ease;
+
+}
+
+/* Results Screen */
+
+#result-screen h1
+{
+
+}
+
+.result-info
+{
+    background-color: #b5b8c7;
+    border-radius: 2rem;
+    padding: 20px;
+    margin-bottom: 30px;
+
+
+}
+
+.result-info p
+{
+    font-size: 1rem;
+    margin-bottom: 5px;
+
+}
+
+/* Responsive Design */
+@media (max-width:500px) 
+{
+    /* when hitting 500px or below, implement styles below */
+    .screen{
+        padding: 10px;
+        
+    }
+
+}
+
+
+
 
